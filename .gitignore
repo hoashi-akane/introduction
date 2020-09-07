@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# GitHub token
+/lib/github/token.js
