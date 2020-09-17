@@ -1,5 +1,6 @@
 import Layout from '../../components/layout'
 import { getProductList } from '../../lib/github/user'
+import styles from '../../styles/product/ItemList.module.css'
 
 
 export default function ItemList({ allProduct }){
@@ -7,7 +8,10 @@ export default function ItemList({ allProduct }){
 // ここでProductListの処理を書いても良い
     return(
         <Layout>
-            { ProductList(allProduct) }
+            <h3 className={styles.header }>開発コンテンツリスト</h3>
+            <div className={ styles.cardLists }>
+                { ProductList(allProduct) }
+            </div>
         </Layout>
     );
 }
@@ -21,13 +25,26 @@ export async function getServerSideProps(context) {
     }
 }
 
-export function ProductList(allProduct){
-    let list = []
-// for~in ではなく for~of
-    for(let product of allProduct){
-        list.push(<li>リポジトリ名: {product.node.name} </li>)
-        list.push(<li>説明: {product.node.description} </li>)
-        list.push(<a href={product.node.url}>{product.node.url}</a>)
-    }
-    return(list)
+// プロダクト一覧表示用メソッド
+export function ProductList( allProduct ){
+    
+    return(
+        allProduct.map( product =>
+            <a href={product.node.url} className={ styles.productURL }>
+                <div className={ styles.card }>
+                    <h4 className={ styles.repositoryName}>リポジトリ名: { product.node.name }</h4>
+                    <div>説明: { product.node.description }</div>
+                    <div >{product.node.url}</div>
+                </div>
+            </a>
+        )
+    )
+
+    // for~in ではなく for~of
+    // let list = []
+    // for(let product of allProduct){
+    //     list.push(<h4 className={ styles.repositoryName}>リポジトリ名: {product.node.name} </h4>)
+    //     list.push(<div>説明: {product.node.description}</div>)
+    //     list.push(<a href={product.node.url} className={ styles.productURL }>{product.node.url}</a>)
+    // }
 }
