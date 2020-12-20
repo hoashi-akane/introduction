@@ -30,7 +30,7 @@ export function ProductList( allProduct ){
     
     return(
         allProduct.map( product =>
-            <a href={product.node.url} className={ styles.productURL }>
+            <a href={product.node.url} className={ styles.productURL } key={product}>
                 <div className={ styles.card }>
                     <h4 className={ styles.repositoryName}>リポジトリ名: { product.node.name }</h4>
                     <div>説明: { product.node.description }</div>
