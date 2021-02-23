@@ -4,6 +4,6 @@ module.exports = {
   assetPrefix: !debug ? '/introduction/' : '',
   
   env:{
-    GITHUB_TOKEN:process.env.GITHUB_TOKEN
+    REPO_TOKEN:process.env.REPO_TOKEN
   }
 }
