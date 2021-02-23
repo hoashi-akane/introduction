@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>ページ読み込み…</title>
+        <title>introduction</title>
         <script>
         setTimeout("location.href='introduction'",2000);
       </script>

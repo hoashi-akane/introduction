@@ -19,7 +19,7 @@ export default function Introduction(){
             </div>
 
             <h4 className={styles.profileTitle}>経験・実績</h4>
-            <div className={styles.profile}>
+            <div>
                 <ul className={styles.unorderList}>
                     <li>ヤフー株式会社主催Hack-U 2019 Fukuoka : ヤフー賞</li>
                     <li>アスクル株式会社 : インターンシップ(5日間)</li>

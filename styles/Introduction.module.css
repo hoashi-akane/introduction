@@ -10,6 +10,10 @@
     display:inline-block;
 }
 
+.profile {
+    margin-inline-start: 1rem;
+}
+
 .profileTitle {
     margin-bottom: 1rem;
 }
