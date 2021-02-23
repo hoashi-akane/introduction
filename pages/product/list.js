@@ -16,7 +16,8 @@ export default function ItemList({ allProduct }){
     );
 }
 
-export async function getServerSideProps(context) {
+// github pagesで動的取得は不可なのでstaticpropsで取得
+export async function getStaticProps(context) {
     let allProduct = await getProductList()
     return {
         props: {
@@ -24,6 +25,15 @@ export async function getServerSideProps(context) {
         }
     }
 }
+
+// export async function getServerSideProps(context) {
+//     let allProduct = await getProductList()
+//     return {
+//         props: {
+//             allProduct
+//         }
+//     }
+// }
 
 // プロダクト一覧表示用メソッド
 export function ProductList( allProduct ){
