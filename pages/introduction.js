@@ -36,7 +36,7 @@ export default function Introduction(){
                     <span>GitHub</span>
                 </a>
                 {/* Linkの子はaタグでくくる。SEO的に＆子要素は１つしか指定できない?ため */}
-                <Link href="/product/list">
+                <Link href="product/list">
                     <a className={styles.btn + " "+ styles.svgBtn}>
                         <svg>
                             <rect x="2" y="2" rx="2" fill="none" width="200" height="50"></rect>
