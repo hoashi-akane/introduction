@@ -11,11 +11,9 @@ export default function Introduction(){
             </Head>
             <h4 className={styles.profileTitle}>自己紹介</h4>
             <div className={styles.profile}>
-                <span className={styles.inlinePc}>２１卒情報系専門学校３年生　　</span>
+                <span className={styles.inlinePc}>バックエンドエンジニア</span>
                 <span className={styles.inlinePc}>Webアプリケーション・スマホアプリの開発をしています。</span>
-                <br></br>
-                <span className={styles.inlinePc}>メインPC：ThinkPad X1 Carbon(6Gen)　　</span>
-                <span className={styles.inlinePc}>メインOS：Linux(Elementary OS)</span>
+                <span className={styles.inlinePc}>新卒1年目20歳です。</span>
             </div>
 
             <h4 className={styles.profileTitle}>経験・実績</h4>
