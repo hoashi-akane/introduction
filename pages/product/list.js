@@ -4,7 +4,7 @@ import styles from '../../styles/product/ItemList.module.css'
 
 
 export default function ItemList({ allProduct }){
-    
+
 // ここでProductListの処理を書いても良い
     return(
         <Layout>

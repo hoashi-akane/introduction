@@ -13,7 +13,7 @@ export default function Introduction(){
             <div className={styles.profile}>
                 <span className={styles.inlinePc}>バックエンドエンジニア</span>
                 <span className={styles.inlinePc}>Webアプリケーション・スマホアプリの開発をしています。</span>
-                <span className={styles.inlinePc}>新卒1年目20歳です。</span>
+                <span className={styles.inlinePc}>新卒2年目22歳です。</span>
             </div>
 
             <h4 className={styles.profileTitle}>経験・実績</h4>
@@ -42,12 +42,14 @@ export default function Introduction(){
                         <span>開発コンテンツ</span>
                     </a>
                 </Link>
-                <a href="#" className={styles.btn + " "+ styles.svgBtn}>
+                <Link href="/todo/list" as={process.env.BACKEND_URL + '/todo/list'}>
+                <a className={styles.btn + " "+ styles.svgBtn}>
                     <svg>
                         <rect x="2" y="2" rx="2" fill="none" width="200" height="50"></rect>
                     </svg>
                     <span>今後やりたいこと</span>
                 </a>
+                </Link>
             </div>
 
         </Layout>
