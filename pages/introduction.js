@@ -11,17 +11,17 @@ export default function Introduction(){
             </Head>
             <h4 className={styles.profileTitle}>自己紹介</h4>
             <div className={styles.profile}>
-                <span className={styles.inlinePc}>バックエンドエンジニア</span>
+                <span className={styles.inlinePc}>モバイルアプリエンジニア</span>
                 <span className={styles.inlinePc}>Webアプリケーション・スマホアプリの開発をしています。</span>
-                <span className={styles.inlinePc}>新卒1年目20歳です。</span>
             </div>
 
             <h4 className={styles.profileTitle}>経験・実績</h4>
             <div>
                 <ul className={styles.unorderList}>
-                    <li>ヤフー株式会社主催Hack-U 2019 Fukuoka : ヤフー賞</li>
-                    <li>アスクル株式会社 : インターンシップ(5日間)</li>
-                    <li>Triple Four株式会社 : アルバイト(6ヶ月)</li>
+                    <li>2021~:ヤフー株式会社 Androidアプリエンジニア</li>
+                    <li>2019:ヤフー株式会社主催Hack-U 2019 Fukuoka ヤフー賞</li>
+                    <li>2019:アスクル株式会社 インターン(5日間)</li>
+                    <li>2019:Triple Four株式会社 アルバイト(6ヶ月)</li>
                 </ul>
             </div>
 
